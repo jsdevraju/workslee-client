@@ -9,9 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@badrap/bar-of-progress": "^0.2.1",
+    "@reduxjs/toolkit": "^1.8.2",
+    "axios": "^0.27.2",
+    "firebase": "^9.8.3",
+    "geolib": "^3.3.3",
+    "javascript-time-ago": "^2.5.4",
+    "mapbox-gl": "^2.9.0",
+    "moment": "^2.29.3",
     "next": "12.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-datepicker": "^4.8.0",
+    "react-dom": "18.2.0",
+    "react-form-stepper": "^2.0.3",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.4.0",
+    "react-loader-spinner": "^5.1.5",
+    "react-map-gl": "^7.0.16",
+    "react-redux": "^8.0.2",
+    "react-star-ratings": "^2.3.0",
+    "react-time-ago": "^7.2.1"
   },
   "devDependencies": {
     "eslint": "8.18.0",

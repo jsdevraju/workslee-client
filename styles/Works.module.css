@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.postedJob{
+    width: 450px;
+    padding: 1em;
+}
+
+.map{
+   flex: 1 1 0%;
+   position: sticky;
+   bottom: 0;
+   top: 68px;
+   height: calc(100vh - 70px);
+   overflow: hidden;
+   width: 100%;
+}
+
+.rightHeader{
+    display: none;
+}
+
+
+@media (max-width:550px){
+    .postHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rightHeader{
+        display: block;
+    }
+
+    .rightHeader p{
+        font-size: 1em;
+        color: #333;
+        font-weight: bold;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .postedJob{
+        width: 100%;
+    }
+    .map{
+        width: 100%;
+    }
+    .scrollMap{
+        position: absolute;
+        top: 70px;
+        bottom: 0;
+        height: 100%;
+        z-index: 11;
+    }
+}

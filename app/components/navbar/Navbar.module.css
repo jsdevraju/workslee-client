@@ -1,0 +1,118 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    height: 70px;
+}
+
+.nav_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.header {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.popup {
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    background: #fff;
+    width: 200px;
+    color: #9ca3af;
+    padding: 1em;
+    line-height: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px -1px rgb(0 0 0 / 10%);
+    z-index: 99999999999999999;
+}
+
+.jobBtn{
+    display: none;
+}
+
+.popup h3 {
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #ececec;
+}
+
+.popLink {
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup button {
+    width: 100%;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+
+.overlayShow {
+    visibility: visible;
+    opacity: 0.1;
+}
+
+@media (max-width:768px) {
+    .nav_item {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 1em;
+        align-items: flex-start;
+        width: 100%;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .showNav {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    .nav_item li {
+        border-bottom: 1px solid #f0f0f0;
+        width: 100%;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .popup{
+        left: -132px;
+    }
+    .jobBtn{
+        display: block;
+    }
+}

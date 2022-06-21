@@ -1,0 +1,51 @@
+.login{
+    padding: 1em 0px;
+}
+
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    padding: 1.5em;
+    border-radius: 1em;
+    width: 390px;
+}
+
+.loginContainer p{
+  color: #9ca3af ;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.loginForm{
+    margin-top: 0.5em;
+    width: 100%;
+}
+
+.loginFormGroup label{
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+.loginFormGroup input{
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 1em;
+    outline: none;
+}
+
+.loginFormGroup input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+.loginForm button{
+    width: 100%;
+    margin-top: 1em;
+}

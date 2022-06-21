@@ -1,0 +1,163 @@
+.create{
+    padding: 4em 0px;
+}
+
+.category h1{
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    margin-top: 1em;
+}
+
+.flexBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    outline: 2px solid var(--primary-color);
+    margin: 0.5em;
+}
+.activeShow{
+    background-color: var(--primary-color);
+}
+.box{
+    width: 140px;
+    box-shadow: 0px 5px 5px 5px #f3f3f3;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.otherInfo{
+    max-width: 550px;
+    padding: 1em;
+}
+.otherInfo input{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.otherInfo input:focus{
+    outline: 2px solid var(--primary-color);
+}
+
+.otherInfo textarea{
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.otherInfo textarea:focus{
+    outline: 2px solid var(--primary-color);
+}
+
+.locationAdd{
+    box-shadow: 0px 5px 5px 5px #f3f3f3;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.locationHeader{
+    border-bottom: 2px solid #f0eded;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+.searchLocation input{
+    display: inline-block;
+    width: 80%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.searchLocation input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+.taskType{
+    margin-top: 2em;
+}
+
+.taskType ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1em;
+}
+
+.doneDate{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.doneDate h1{
+    margin-bottom: 0.5em;
+}
+
+.taskType ul li{
+    padding: 0.8em;
+    box-shadow: 0px 5px 5px 5px #f3f3f3;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 3px;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.taskCard{
+    background-color: #F5FCF3;
+    width: 200px;
+    padding: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active{
+    outline: 2px solid var(--primary-color);
+}
+
+.taskCardActive{
+    outline: 2px solid var(--primary-color);
+}
+
+@media (max-width:550px){
+    .searchLocation input{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .taskType ul{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+
+    }
+    .taskCard{
+        width: 100%;
+    }
+}

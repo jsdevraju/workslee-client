@@ -1,16 +1,182 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+/* reset Css */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* Css Variable */
+:root {
+  --primary-color: #63cf50;
+  --white-color: #fff;
+  --nav-color: #374151
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p,
+button,
+input,
+label, div, section {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.app_btn{
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  background: var(--primary-color);
+  padding: 0.5em 2em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.app_btn:hover{
+  outline: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+
+button.app_btn:disabled {
+  opacity: 0.5;
+}
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+img{
+  width: 100%;
+}
+
+.logo{
+  width: 200px;
+}
+
+.nav_links{
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--nav-color);
+  transition: 0.3s ease-in-out;
+}
+
+.nav_links:hover{
+  color: var(--primary-color);
+}
+
+.nav_links.active{
+  color: var(--primary-color);
+}
+
+.job {
+  border: 1px solid #f3f4f6;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  margin-top: 1.5em;
+}
+
+.job:hover{
+  outline: 2px solid var(--primary-color);
+}
+
+.job_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.job_header p {
+  background: black;
+  color: #fff;
+  padding: 0.3em 0.75em;
+  border-radius: 10px;
+}
+
+.job_description p {
+  color: rgb(125, 125, 125);
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.job_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.react-datepicker__input-container input {
+  width: 20%;
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(229, 231, 235);
+  border-image: initial;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+.navMenu{
+  display: none;
+}
+
+
+@media (max-width:768px){
+  .navMenu{
+    display: block;
+  }
+  .navMenu .bars{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin-top: 5px;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+
+  .navMenu.isActive .bars:nth-child(2){
+    opacity: 0;
+  }
+  .navMenu.isActive .bars:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+  }
+  .navMenu.isActive .bars:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  .myBtn{
+    display: none;
+  }
+}
+
+
+@media (max-width:550px){
+  .react-datepicker__input-container input{
+    width: 100%;
+  }
+  .sm_btn{
+    width: 100%;
+  }
 }
