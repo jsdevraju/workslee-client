@@ -48,7 +48,7 @@ const Works = ({ jobs }) => {
                     <p>You can filter your result as well</p>
                   </div>
                   <div className={styles.rightHeader}>
-                    <p onClick={() => setShowMap(!showMap)}>Show Map</p>
+                    <p onClick={() => setShowMap(!showMap)}>{showMap ? "Hide Map" : "Show Map"}</p>
                   </div>
                 </div>
                 {/* Job Filter end header */}
